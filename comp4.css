@@ -73,3 +73,8 @@ margin: 0px;
     justify-content: center; 
 }
 
+@media (max-width: 576px) {
+    #comp4 #icons {
+        justify-content: center; /* Centers icons on mobile */
+    }
+}

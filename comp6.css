@@ -11,7 +11,7 @@
 #comp6 #left #Head span{
     color:#fa8d25;
     font-size: 16px;
-    margin:40px 10px 20px 0px;
+    margin:90px 10px 20px 0px;
     padding: 20px;
 }
 #comp6 #left #line1{
@@ -98,3 +98,11 @@
     font-weight: 800;
     font-size: 20px;
  }
+ @media (max-width: 768px) {
+    #comp6 {
+        flex-direction: column; /* Stacks left and right main sections */
+    }
+    #comp6 .lists {
+        flex-direction: column; /* Stacks list groups vertically */
+    }
+}

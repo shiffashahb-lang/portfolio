@@ -77,3 +77,31 @@
 #comp2 #down #boxes #btn :hover{
     background-color: #ffff;
 }
+@media (max-width: 992px) {
+    #comp2 #down #boxes {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+}
+@media (max-width: 576px) {
+    #comp2 #down #boxes {
+        grid-template-columns: 1fr; /* 1 column on mobile phones */
+    }
+}
+#comp2 #down #boxes {
+    display: flex;
+    flex-wrap: wrap; /* Key fix to allow cards to wrap to the next line */
+    justify-content: center;
+    margin: 0;
+}
+#comp2 #down #boxes .commonB {
+    flex: 1 1 100%; /* Full width on mobile */
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 576px) {
+    #comp2 #down #boxes .commonB { flex: 1 1 45%; } /* 2 columns on tablets */
+}
+@media (min-width: 992px) {
+    #comp2 #down #boxes .commonB { flex: 1 1 21%; } /* 4 columns on desktop */
+}

@@ -93,3 +93,30 @@
     text-align: center;
     align-items: center; 
 }
+#comp7 #up #para {
+    width: 90%;
+    max-width: 600px;
+    margin: 10px auto; /* Replaced the restrictive 350px hard margin */
+}
+#comp7 #down #boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#comp7 #down #boxes .commonB {
+    flex: 1 1 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#comp7 #down #boxes #box1 #image,
+#comp7 #down #boxes #box2 #image,
+#comp7 #down #boxes #box3 #image {
+    margin-right: 0; /* Remove rigid space constraints */
+    width: 200px; /* Maintain fixed card graphic width */
+}
+
+@media (min-width: 768px) {
+    #comp7 #down #boxes .commonB { flex: 1 1 30%; }
+}
